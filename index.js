@@ -222,7 +222,7 @@ function genFunctions(cls) {
 
     var rendered = Mustache.render(template, renderData);
 
-    fs.writeFile('./../node-skautis/services/' + cls.serviceName + '.js', rendered, function (err) {
+    fs.writeFile('./../node-skautis/lib/services/' + cls.serviceName + '.js', rendered, function (err) {
       if (err) {
         console.dir(err);
       }
